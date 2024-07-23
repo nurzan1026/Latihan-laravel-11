@@ -7,7 +7,7 @@
     "editor.lineHeight": 1.5,
     "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "workbench.colorTheme": "Material Theme Palenight High Contrast",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
         "statusBar.background": "#0b1f63",
         "titleBar.activeBackground": "#0d4a40",

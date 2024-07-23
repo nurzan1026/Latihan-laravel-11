@@ -9,12 +9,11 @@
     @vite('resources/css/app.css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,11 +85,6 @@
                             <a href="#Kontak"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-primary hover:text-slate-100 text-center">Kontak</a>
                         </div>
-                        <div class="py-6">
-                            <a href="#"
-                                class="block w-full rounded-md bg-primary px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-hijau sm:hidden text-center">Log
-                                in</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -106,7 +100,7 @@
                 <h1 class="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-800 font-caveat">
                     <span id="typing-text"></span>
                 </h1>
-                <p class="mt-6 text-base lg:text-lg leading-8 text-gray-950">
+                <p class="mt-6 lg:text-lg leading-8 text-gray-700 font-bold">
                     "Bank Sampah Pelita Bangsa adalah inisiatif untuk mengelola sampah
                     secara efektif dan ramah lingkungan. Kami bertujuan untuk
                     meningkatkan kesadaran masyarakat tentang pentingnya daur ulang
@@ -114,20 +108,38 @@
                 </p>
                 <div class="mt-10 flex items-center justify-start gap-x-6">
                     <a href="#"
-                        class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-slate-100 shadow-sm hover:bg-teal-500"
+                        class="rounded-md bg-primary px-3 py-2 md:px-6 md:py-3 text-sm font-bold text-slate-100 shadow-sm hover:bg-hijau"
                         onclick="showAdminLoginModal()">Login Admin</a>
                     <a href="#"
-                        class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-slate-100 shadow-sm hover:bg-blue-500">Login
+                        class="rounded-md bg-blue-600 px-3 py-2 md:px-6 md:py-3 text-sm font-bold text-slate-100 shadow-sm hover:bg-blue-500">Login
                         Nasabah</a>
                 </div>
             </div>
-            {{-- <div class="lg:w-1/2 lg:mt-0 flex justify-center">
-                <img src="{{ asset('images/company-1.jpeg') }}" alt="Gambar Bank Sampah Pelita Bangsa"
-                    class="w-3/4 h-auto" />
-            </div> --}}
         </div>
         <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
             aria-hidden="true"></div>
+    </div>
+
+    <!-- New Section with Green Background -->
+    <div class="w-full bg-hijau py-8">
+        <div
+            class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row flex-wrap justify-center md:justify-between items-center md:items-stretch gap-6">
+            <div
+                class="text-center text-white bg-white bg-opacity-10 p-6 rounded-lg shadow-lg w-full md:flex-1 max-w-xs md:max-w-none">
+                <h2 class="text-xl md:text-2xl font-bold">Jumlah Nasabah</h2>
+                <p class="text-lg">1234</p>
+            </div>
+            <div
+                class="text-center text-white bg-white bg-opacity-10 p-6 rounded-lg shadow-lg w-full md:flex-1 max-w-xs md:max-w-none">
+                <h2 class="text-xl md:text-2xl font-bold">Total Sampah Terangkut Bulan Ini</h2>
+                <p class="text-lg">5678 kg</p>
+            </div>
+            <div
+                class="text-center text-white bg-white bg-opacity-10 p-6 rounded-lg shadow-lg w-full md:flex-1 max-w-xs md:max-w-none">
+                <h2 class="text-xl md:text-2xl font-bold">Penjualan Sampah</h2>
+                <p class="text-lg">Rp 123,456,789</p>
+            </div>
+        </div>
     </div>
 
     {{-- ! ====== VISI DAN MISI START ===== --}}
@@ -203,6 +215,61 @@
     </section>
 
     {{-- ! ====== VISI DAN MISI END ==================== --}}
+    <div class="w-full bg-gray-100 py-8">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center mb-3">Bekerja Sama Dengan</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Card for Google -->
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-md max-w-xs text-center">
+                    <div class="w-full h-32 overflow-hidden mb-4">
+                        <img src="{{ asset('images/garbage-2.jpeg') }}" alt="Google"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg font-semibold mb-2">Google</p>
+                    <p class="text-sm text-gray-700 text-justify">Google adalah perusahaan teknologi multinasional yang
+                        terkenal
+                        dengan mesin pencari internetnya. Mereka juga terlibat dalam berbagai sektor teknologi, termasuk
+                        iklan digital, perangkat keras, dan layanan cloud computing.</p>
+                </div>
+                <!-- Card for Microsoft -->
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-md max-w-xs text-center">
+                    <div class="w-full h-32 overflow-hidden mb-4">
+                        <img src="{{ asset('images/garbage-3.jpeg') }}" alt="Microsoft"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg font-semibold mb-2">Microsoft</p>
+                    <p class="text-sm text-gray-700 text-justify">Microsoft Corporation adalah perusahaan teknologi
+                        yang memproduksi
+                        perangkat lunak, perangkat keras, dan layanan. Terkenal dengan sistem operasi Windows dan paket
+                        produktivitas Office, Microsoft juga aktif dalam cloud computing dan teknologi AI.</p>
+                </div>
+                <!-- Card for Apple -->
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-md max-w-xs text-center">
+                    <div class="w-full h-32 overflow-hidden mb-4">
+                        <img src="{{ asset('images/garbage-4.jpeg') }}" alt="Apple"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg font-semibold mb-2">Apple</p>
+                    <p class="text-sm text-gray-700 text-justify">Apple Inc. adalah perusahaan teknologi yang dikenal
+                        dengan inovasi
+                        di bidang perangkat keras dan perangkat lunak. Produk terkenal mereka termasuk iPhone, iPad, dan
+                        Mac, serta sistem operasi iOS dan macOS.</p>
+                </div>
+                <!-- Card for Mozilla -->
+                <div class="flex flex-col items-center p-3 bg-white rounded-lg shadow-md max-w-xs text-center">
+                    <div class="w-full h-32 overflow-hidden mb-4">
+                        <img src="{{ asset('images/company-9.jpeg') }}" alt="Mozilla"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg font-semibold mb-2">Mozilla</p>
+                    <p class="text-sm text-gray-700 text-justify">Mozilla Foundation adalah organisasi yang
+                        mengembangkan perangkat
+                        lunak sumber terbuka, termasuk browser web Firefox. Mozilla berkomitmen pada privasi dan
+                        kebebasan internet serta mendukung inovasi dalam teknologi web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     {{--  ! ============================= KERAJINAN  start ========== --> --}}
     <div class="container scroll-mt-28" id="Kerajinan container">
@@ -361,85 +428,39 @@
                     <p class="text-base">info@banksampahpelitabangsa.com</p>
                 </div>
             </div>
+            <div class="flex flex-col md:flex-row md:space-x-10 items-center max-w-screen-md mx-auto">
+                <div class="space-y-4 md:w-1/2">
+                    <a href="#"
+                        class="flex items-center justify-center bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">
+                        <i class="fab fa-facebook-f text-2xl mr-2"></i>
+                        <span class="text-center">Facebook</span>
+                    </a>
+                    <a href="#"
+                        class="flex items-center justify-center bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700 transition">
+                        <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                        <span class="text-center">WhatsApp</span>
+                    </a>
+                    <a href="#"
+                        class="flex items-center justify-center bg-pink-600 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-700 transition">
+                        <i class="fab fa-instagram text-2xl mr-2"></i>
+                        <span class="text-center">Instagram</span>
+                    </a>
+                    <a href="#"
+                        class="flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">
+                        <i class="fab fa-telegram-plane text-2xl mr-2"></i>
+                        <span class="text-center">Telegram</span>
+                    </a>
+                </div>
+
+                <div class="md:w-1/2 mt-6 md:mt-0 flex items-center justify-center">
+                    <img src="{{ asset('images/rmv-1.png') }}" alt="Contact Image"
+                        class="w-full rounded-lg shadow-md h-96 object-cover">
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <div class="isolate bg-gray-100 px-6 py-24 sm:py-32 lg:px-8">
-        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-            aria-hidden="true"></div>
-        <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-2xl lg:text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-                Hubungi Kami
-            </h2>
-            <p class="mt-2 text-base sm:text-lg leading-8 text-gray-600">
-                Jika anda masi bingung terkait bangsa sampah pelita bangksa silahkan
-                masukkan Data anda dibawa ini untuk menjawab pertanyaan anda
-            </p>
-        </div>
-        <form action="#" method="POST"
-            class="mx-auto mt-16 max-w-xl bg-white shadow-md p-6 rounded-lg sm:bg-transparent sm:shadow-none sm:p-0 sm:rounded-none sm:mt-20">
-            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                <div>
-                    <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Nama
-                        Lengkap</label>
-                    <div class="mt-2.5">
-                        <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                            placeholder="Masukkan nama lengkap anda"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" />
-                    </div>
-                </div>
-                <div>
-                    <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Nama
-                        Panggilan</label>
-                    <div class="mt-2.5">
-                        <input type="text" name="nama-panggilan" id="nama-panggilan" autocomplete="family-name"
-                            placeholder="Masukkan nama panggilan anda"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" />
-                    </div>
-                </div>
-                <div class="sm:col-span-2">
-                    <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Alamat</label>
-                    <div class="mt-2.5">
-                        <input type="text" name="company" id="company" autocomplete="organization"
-                            placeholder="Masukkan alamat anda"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" />
-                    </div>
-                </div>
-                <div class="sm:col-span-2">
-                    <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-                    <div class="mt-2.5">
-                        <input type="email" name="email" id="email" autocomplete="email"
-                            placeholder="Masukkan alamat email anda"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" />
-                    </div>
-                </div>
-                <div class="sm:col-span-2">
-                    <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Nomor Hp</label>
-                    <div class="mt-2.5">
-                        <input type="phone_number" name="phone_number" id="phone-number" autocomplete="phone_number"
-                            placeholder="Masukkan nomor handphone anda"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" />
-                    </div>
-                </div>
-
-                <div class="sm:col-span-2">
-                    <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-                    <div class="mt-2.5">
-                        <textarea name="message" id="message" rows="4" placeholder="Tulis pesan yang ingin anda sampaikan disini"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-10">
-                <button type="submit"
-                    class="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-hijau">
-                    Kirim
-                </button>
-            </div>
-        </form>
-    </div>
-
-    {{-- ! ====== Kirim text pesan end ====== --}}
 
     {{-- ! ====== Footer start ====== --}}
     <footer class="bg-primary text-white py-8">
