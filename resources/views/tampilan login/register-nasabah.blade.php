@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REGISTER BSU</title>
     @vite('resources/css/app.css')
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
 </head>
 
-<body>
+<body class="font-Quicksand">
     <main class="bg-slate-100 min-h-screen flex items-center justify-center p-4">
         <div class="relative bg-white shadow-xl flex flex-col lg:flex-row rounded-xl overflow-hidden lg:w-3/5 2xl:w-1/3 transition-transform"
             id="auth-container">
@@ -21,7 +22,7 @@
             <!-- Register Form -->
             <div class="p-6 lg:w-1/2" id="register-form">
                 <h1 class="font-bold text-gray-700 text-xl md:text-2xl">
-                    Form register Admin bank sampah pelita bangsa
+                    Form register Nasabah bank sampah pelita bangsa
                 </h1>
                 <h2 class="text-2xl font-bold mt-4 mb-4 text-primary">Register</h2>
                 <form action="" class="flex flex-col">
