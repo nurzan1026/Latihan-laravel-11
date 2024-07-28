@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NasabahController;
+use App\Http\Controllers\AdminController;
 
 route::get('/', function () {
     return view('sibasu');
@@ -28,5 +29,6 @@ route::get('/data-sampah', function(){
 
 
 Route::resource('nasabah', NasabahController::class);
+Route::resource('admins', AdminController::class);
 
 route::get('/show-data-nasabah', [NasabahController::class, 'showAll']);
